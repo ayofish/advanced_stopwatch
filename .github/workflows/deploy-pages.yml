@@ -29,11 +29,11 @@ jobs:
             demo/package-lock.json
 
       - name: Install & build library
-        run: npm ci && npm run build
+        run: npm install && npm run build
 
       - name: Install & build demo
         working-directory: demo
-        run: npm ci && npm run build
+        run: npm install && npm run build
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           VITE_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
