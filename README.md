@@ -1,11 +1,11 @@
-# advanced-stopwatch
+# react-stopwatch-pro
 
 React stopwatch component with laps, merge/delete, manual time override, swipe hints on small screens, and a headless **`useStopwatch`** hook. Written in TypeScript.
 
 **Live demo (GitHub Pages):** after you enable Pages (see below), your site will be at  
 `https://<your-username>.github.io/<repository-name>/`  
-For a repo named `advanced-stopwatch` under user `myuser`, that is  
-`https://myuser.github.io/advanced-stopwatch/`.
+For a repo named `react-stopwatch-pro` under user `myuser`, that is  
+`https://myuser.github.io/react-stopwatch-pro/`.
 
 ## Features
 
@@ -19,7 +19,7 @@ For a repo named `advanced-stopwatch` under user `myuser`, that is
 ## Install
 
 ```bash
-npm install advanced-stopwatch
+npm install react-stopwatch-pro
 ```
 
 **Peer dependencies:** `react` and `react-dom` **18+**.
@@ -34,7 +34,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/advanced-stopwatch/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/react-stopwatch-pro/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -59,7 +59,7 @@ Modal panels use the **`animate-scale-in`** animation; add the keyframes above i
 ### `<Stopwatch />`
 
 ```tsx
-import { Stopwatch } from "advanced-stopwatch";
+import { Stopwatch } from "react-stopwatch-pro";
 
 export function App() {
   return (
@@ -92,7 +92,7 @@ export function App() {
 Use the same timing/lap logic with your own UI:
 
 ```tsx
-import { useStopwatch, formatStopwatchTime } from "advanced-stopwatch";
+import { useStopwatch, formatStopwatchTime } from "react-stopwatch-pro";
 
 export function CustomUI() {
   const sw = useStopwatch({});
@@ -151,7 +151,7 @@ npm run demo:preview   # optional local check of demo/dist
 The demo’s “View on GitHub” link is set at build time via **`VITE_REPO_URL`** in the workflow. For local dev you can add a **`demo/.env`** file:
 
 ```bash
-VITE_REPO_URL=https://github.com/you/advanced-stopwatch
+VITE_REPO_URL=https://github.com/you/react-stopwatch-pro
 ```
 
 ## Library development
