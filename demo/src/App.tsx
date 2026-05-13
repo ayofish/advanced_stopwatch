@@ -1,8 +1,8 @@
-import { Stopwatch } from "advanced-stopwatch";
+import { Stopwatch } from "react-stopwatch-pro";
 
 const repoUrl =
   import.meta.env.VITE_REPO_URL ??
-  "https://github.com/YOUR_USERNAME/advanced-stopwatch";
+  "https://github.com/ayofish/react-stopwatch-pro";
 
 export function App() {
   return (
