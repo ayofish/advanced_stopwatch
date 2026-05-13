@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "description": "Advanced, accessible stopwatch UI component for React",
   "license": "MIT",
-  "author": "",
+  "author": "ayofish",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/advanced-stopwatch.git"
+    "url": "https://github.com/ayofish/advanced_topwatch.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/advanced-stopwatch/issues"
+    "url": "https://github.com/ayofish/advanced_stopwatch/issues"
   },
-  "homepage": "https://YOUR_USERNAME.github.io/advanced-stopwatch/",
+  "homepage": "https://ayofish.github.io/advanced_stopwatch/",
   "keywords": [
     "react",
     "stopwatch",
