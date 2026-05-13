@@ -38,6 +38,7 @@ export function useStopwatch({
   onStop,
   onReset,
   onLap,
+  onLapsChange,
   autoStart = false,
 }: UseStopwatchOptions): UseStopwatchResult {
   const [isRunning, setIsRunning] = useState(autoStart);
@@ -54,6 +55,10 @@ export function useStopwatch({
   const startTimeRef = useRef<number>(0);
   const animationFrameRef = useRef<number>(0);
   const touchStartXRef = useRef<number>(0);
+
+  useEffect(() => {
+    onLapsChange?.(laps);
+  }, [laps, onLapsChange]);
 
   useEffect(() => {
     const updateTime = () => {

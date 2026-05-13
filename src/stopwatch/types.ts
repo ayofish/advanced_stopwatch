@@ -3,6 +3,7 @@ export interface StopwatchProps {
   onStop?: (time: number) => void;
   onReset?: () => void;
   onLap?: (lapTime: number, totalTime: number) => void;
+  onLapsChange?: (laps: number[]) => void;
   autoStart?: boolean;
   showLaps?: boolean;
   className?: string;

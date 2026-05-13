@@ -11,6 +11,7 @@ export function Stopwatch({
   onStop,
   onReset,
   onLap,
+  onLapsChange,
   autoStart = false,
   showLaps = true,
   className = "",
@@ -20,6 +21,7 @@ export function Stopwatch({
     onStop,
     onReset,
     onLap,
+    onLapsChange,
     autoStart,
   });
 
